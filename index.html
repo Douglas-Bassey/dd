@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Douglas Bassey — Growth Strategist & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+ 
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#portfolio" onclick="closeMobileNav()">Work</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#process" onclick="closeMobileNav()">Process</a>
+    <a href="#contact" class="btn-blue" onclick="closeMobileNav()">Book a Call</a>
+  </div>
+ 
+  <!-- Nav -->
+  <nav id="navbar">
+    <a href="#" class="nav-brand">DOUGLAS<span class="nav-brand-dot">.</span>DEV</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact" class="nav-cta"><i data-lucide="calendar"></i> Book a Call</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+ 
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-left">
+      <div class="hero-badge"><span class="hero-badge-dot"></span>Available for new projects - 2026</div>
+      <h1 class="hero-h1">Websites that<br><em>generate</em><br>real revenue.</h1>
+      <p class="hero-sub">Douglas Dev builds high-converting sales systems, scalable growth strategies, and AI-powered automations for ambitious businesses.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-blue"><i data-lucide="phone-call"></i> Book Free Strategy Call</a>
+        <a href="https://wa.me/2349131212154" class="btn-ghost" target="_blank"><i data-lucide="message-circle"></i> WhatsApp</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-avatars">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="">
+        </div>
+        <div class="hero-trust-text"><strong>5+ clients</strong> scaled across Nigeria</div>
+      </div>
+    </div>
+ 
+    <div class="hero-right">
+      <div class="hero-img-card">
+        <div class="hero-img-card-inner">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=85" alt="Professional team strategy session">
+          <div class="hero-img-overlay"></div>
+        </div>
+        <div class="stat-float stat-float-1">
+          <div class="stat-float-icon"><i data-lucide="trending-up"></i></div>
+          <div><div class="stat-float-num">40%</div><div class="stat-float-label">Avg. Inquiry Increase</div></div>
+        </div>
+        <div class="stat-float stat-float-2">
+          <div class="stat-float-icon"><i data-lucide="zap"></i></div>
+          <div><div class="stat-float-num">Precision</div><div class="stat-float-label">Over Speed</div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- METRICS -->
+  <div class="metrics-bar">
+    <div class="metric-item reveal">
+      <div class="metric-icon"><i data-lucide="bar-chart-2"></i></div>
+      <div class="metric-num">40<span>%</span></div>
+      <div class="metric-label">Avg. inquiry increase</div>
+    </div>
+    <div class="metric-item reveal reveal-delay-1">
+      <div class="metric-icon"><i data-lucide="mouse-pointer-click"></i></div>
+      <div class="metric-num">35<span>%</span></div>
+      <div class="metric-label">Avg. conversion lift</div>
+    </div>
+    <div class="metric-item reveal reveal-delay-2">
+      <div class="metric-icon"><i data-lucide="timer"></i></div>
+      <div class="metric-num">48<span>h</span></div>
+      <div class="metric-label">Avg. delivery time</div>
+    </div>
+    <!-- <div class="metric-item reveal reveal-delay-3">
+      <div class="metric-icon"><i data-lucide="repeat-2"></i></div>
+      <div class="metric-num">3<span>×</span></div>
+      <div class="metric-label">ROI on retainer clients</div>
+    </div> -->
+  </div>
+ 
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="services-intro">
+      <div>
+        <div class="section-eyebrow"><i data-lucide="layers"></i> What I Do</div>
+        <h2 class="section-h2">Built to<br><em>convert.</em></h2>
+      </div>
+      <p class="services-sub">Every service is designed around one outcome — making your business more money, predictably.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <div class="service-icon-wrap"><i data-lucide="layout-template"></i></div>
+        <div class="service-title">Sales-First Web Design</div>
+        <p class="service-desc">Every pixel is a conversion decision. Websites designed to guide visitors toward your most profitable action — calls, leads, purchases.</p>
+        <div class="service-arrow"><i data-lucide="arrow-up-right"></i></div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-num">02</div>
+        <div class="service-icon-wrap"><i data-lucide="git-branch"></i></div>
+        <div class="service-title">Growth Strategy & Funnels</div>
+        <p class="service-desc">Audit your current setup, identify revenue leaks, and deploy automated funnels that work 24/7 without extra headcount.</p>
+        <div class="service-arrow"><i data-lucide="arrow-up-right"></i></div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-num">03</div>
+        <div class="service-icon-wrap"><i data-lucide="bot"></i></div>
+        <div class="service-title">AI-Powered Automation</div>
+        <p class="service-desc">n8n workflows, lead bots, and content schedulers that eliminate manual tasks and multiply your team's output overnight.</p>
+        <div class="service-arrow"><i data-lucide="arrow-up-right"></i></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">04</div>
+        <div class="service-icon-wrap"><i data-lucide="shopping-bag"></i></div>
+        <div class="service-title">E-Commerce Optimisation</div>
+        <p class="service-desc">Store performance, checkout friction removal, and product page psychology — turning browsers into repeat buyers.</p>
+        <div class="service-arrow"><i data-lucide="arrow-up-right"></i></div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-num">05</div>
+        <div class="service-icon-wrap"><i data-lucide="pen-tool"></i></div>
+        <div class="service-title">Brand & Identity Systems</div>
+        <p class="service-desc">Cohesive visual languages that communicate authority before a prospect reads a single word of your copy.</p>
+        <div class="service-arrow"><i data-lucide="arrow-up-right"></i></div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-num">06</div>
+        <div class="service-icon-wrap"><i data-lucide="refresh-cw"></i></div>
+        <div class="service-title">Ongoing Retainer Support</div>
+        <p class="service-desc">Monthly partnerships for continuous improvement — analytics reviews, A/B tests, and iteration cycles that compound results.</p>
+        <div class="service-arrow"><i data-lucide="arrow-up-right"></i></div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <div class="portfolio-header">
+      <div>
+        <div class="section-eyebrow"><i data-lucide="briefcase"></i> Selected Work</div>
+        <h2 class="section-h2">Proven<br><em>results.</em></h2>
+      </div>
+      <p style="max-width:320px;font-size:.95rem;font-weight:300;color:var(--muted);line-height:1.8;">Every project is measured by one metric: did it make my client more money?</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card reveal">
+        <div class="portfolio-card-inner">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85" alt="Consalfa Construction site">
+          <a href="#" class="portfolio-link"><i data-lucide="arrow-up-right"></i></a>
+          <div class="portfolio-overlay">
+            <div class="portfolio-chips"><span class="portfolio-chip">Construction</span><span class="portfolio-chip">Sales System</span></div>
+            <div class="portfolio-title">Consalfa Construction</div>
+            <div class="portfolio-result">Inquiry volume up <strong>+40%</strong> in 60 days</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card reveal reveal-delay-1">
+        <div class="portfolio-card-inner">
+          <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=900&q=85" alt="ChocoHub ecommerce">
+          <a href="#" class="portfolio-link"><i data-lucide="arrow-up-right"></i></a>
+          <div class="portfolio-overlay">
+            <div class="portfolio-chips"><span class="portfolio-chip">E-Commerce</span><span class="portfolio-chip">CRO</span></div>
+            <div class="portfolio-title">ChocoHub</div>
+            <div class="portfolio-result">Conversion rate up <strong>+35%</strong> post-launch</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-placeholder reveal">
+        <div class="placeholder-icon"><i data-lucide="plus"></i></div>
+        <div class="placeholder-title">Your Project Could Be Here</div>
+        <p class="placeholder-sub">Accepting new clients for Q3 2026</p>
+        <a href="#contact" class="btn-blue" style="margin-top:.25rem;font-size:.75rem;padding:.75rem 1.5rem;"><i data-lucide="calendar"></i> Book a Call</a>
+      </div>
+      <div class="portfolio-card reveal reveal-delay-1">
+        <div class="portfolio-card-inner">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=85" alt="ContentAgent dashboard">
+          <a href="#" class="portfolio-link"><i data-lucide="arrow-up-right"></i></a>
+          <div class="portfolio-overlay">
+            <div class="portfolio-chips"><span class="portfolio-chip">SaaS</span><span class="portfolio-chip">AI Automation</span></div>
+            <div class="portfolio-title">ContentAgent</div>
+            <div class="portfolio-result">AI content pipeline with <strong>n8n</strong> integration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-card">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=700&q=85" alt="Douglas Bassey professional portrait">
+          <div class="about-img-badge">
+            <div class="about-img-badge-icon"><i data-lucide="award"></i></div>
+            <div class="about-img-badge-text">
+              <strong>Douglas Bassey</strong>
+              Growth Strategist & Web Developer
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="section-eyebrow"><i data-lucide="user"></i> Who I Am</div>
+        <h2 class="section-h2" style="font-size:clamp(2.2rem,3vw,3.8rem);">Strategy. Code.<br><em>Results.</em></h2>
+        <p class="about-body">I'm <strong>Douglas Bassey</strong> — a web developer and growth strategist based in Nigeria. I don't just build websites; I build <strong>revenue systems</strong>. Every project starts with understanding what a business actually needs to grow, then engineering the digital infrastructure to make it happen.</p>
+        <p class="about-body" style="margin-top:1.25rem;">My stack spans <strong>Bootstrap, React, JavaScript, and n8n</strong> — but the real skill is translating business goals into interfaces that convert cold visitors into paying clients.</p>
+        <div class="about-skills">
+          <span class="skill-tag"><i data-lucide="code-2"></i> Web Design</span>
+          <span class="skill-tag"><i data-lucide="atom"></i> React</span>
+          <span class="skill-tag"><i data-lucide="layout-grid"></i> Bootstrap 5</span>
+          <span class="skill-tag"><i data-lucide="workflow"></i> n8n</span>
+          <span class="skill-tag"><i data-lucide="git-branch"></i> Funnels</span>
+          <span class="skill-tag"><i data-lucide="bot"></i> AI Workflows</span>
+          <span class="skill-tag"><i data-lucide="file-code"></i> JavaScript</span>
+          <span class="skill-tag"><i data-lucide="mouse-pointer-click"></i> CRO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="section-eyebrow"><i data-lucide="compass"></i> How I Work</div>
+    <h2 class="section-h2">A process built<br>for <em>outcomes.</em></h2>
+    <div class="process-grid">
+      <div class="process-card reveal">
+        <div class="process-card-num">01</div>
+        <div class="process-card-icon"><i data-lucide="search"></i></div>
+        <div class="process-card-title">Discovery & Audit</div>
+        <p class="process-card-desc">Deep-dive into your current setup, traffic, funnel, and competitors. We identify exactly where money is being left on the table.</p>
+      </div>
+      <div class="process-card reveal reveal-delay-1">
+        <div class="process-card-num">02</div>
+        <div class="process-card-icon"><i data-lucide="map"></i></div>
+        <div class="process-card-title">Strategy & Blueprint</div>
+        <p class="process-card-desc">A clear plan: which pages to build, what automations to deploy, and what KPIs to target. No guesswork, no fluff.</p>
+      </div>
+      <div class="process-card reveal reveal-delay-2">
+        <div class="process-card-num">03</div>
+        <div class="process-card-icon"><i data-lucide="rocket"></i></div>
+        <div class="process-card-title">Build & Launch</div>
+        <p class="process-card-desc">Fast, clean execution. Pixel-perfect designs go live on schedule with full testing and performance optimisation.</p>
+      </div>
+      <div class="process-card reveal reveal-delay-3">
+        <div class="process-card-num">04</div>
+        <div class="process-card-icon"><i data-lucide="trending-up"></i></div>
+        <div class="process-card-title">Measure & Scale</div>
+        <p class="process-card-desc">Track real metrics, iterate on what works, and continuously push results higher — month over month.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-eyebrow"><i data-lucide="send"></i> Let's Work Together</div>
+    <h2 class="section-h2">Ready to<br><em>scale?</em></h2>
+    <div class="contact-wrap reveal">
+      <div class="contact-left">
+        <p class="contact-left-eyebrow">Free Strategy Session — 30 Minutes</p>
+        <h3 class="contact-left-h">Let's find your revenue leaks and fix them.</h3>
+        <p class="contact-left-p">No pressure, no pitch deck — just a focused conversation about where your business is and the exact steps to grow it.</p>
+        <div class="contact-info-item"><i data-lucide="phone"></i><a href="tel:+2349131212154">+234 913 121 2154</a></div>
+        <div class="contact-info-item"><i data-lucide="mail"></i><a href="mailto:hello@douglasdev.com">hello@douglasdev.com</a></div>
+        <div class="contact-info-item"><i data-lucide="map-pin"></i>Nigeria · Available Remotely Worldwide</div>
+        <div class="contact-ctas">
+          <a href="https://wa.me/2349131212154" class="contact-btn-white" target="_blank"><i data-lucide="message-circle"></i> WhatsApp</a>
+          <a href="mailto:hello@douglasdev.com" class="contact-btn-outline"><i data-lucide="mail"></i> Send Email</a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div id="formWrap">
+          <div class="form-row-half">
+            <div class="form-row"><label>Full Name</label><input type="text" id="fname" placeholder="Emeka Okafor" required></div>
+            <div class="form-row"><label>Business / Industry</label><input type="text" id="fbusiness" placeholder="E.g. Construction" required></div>
+          </div>
+          <div class="form-row">
+            <label>Service Needed</label>
+            <select id="fservice">
+              <option value="" disabled selected>Select a service...</option>
+              <option>Sales-First Web Design</option>
+              <option>Growth Strategy &amp; Funnels</option>
+              <option>AI-Powered Automation</option>
+              <option>E-Commerce Optimisation</option>
+              <option>Brand &amp; Identity System</option>
+              <option>Ongoing Retainer Support</option>
+            </select>
+          </div>
+          <div class="form-row"><label>Your Biggest Challenge</label><textarea id="fchallenge" rows="5" placeholder="Describe what's not working right now — the more detail, the better..."></textarea></div>
+          <button class="submit-btn" onclick="handleSubmit()"><i data-lucide="calendar-check"></i> Book My Free Strategy Call</button>
+        </div>
+        <div class="success-msg" id="successMsg">
+          <i data-lucide="check-circle"></i>
+          Message received.
+          <p>Douglas will be in touch within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">DOUGLAS<span>.</span>DEV</div>
+    <ul class="footer-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Douglas Bassey. All rights reserved.</p>
+  </footer>
+ 
+  <script>
+    lucide.createIcons();
+ 
+    // Cursor
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      setTimeout(() => { ring.style.left = e.clientX + 'px'; ring.style.top = e.clientY + 'px'; }, 75);
+    });
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.classList.add('hovered'); ring.classList.add('hovered'); });
+      el.addEventListener('mouseleave', () => { cursor.classList.remove('hovered'); ring.classList.remove('hovered'); });
+    });
+ 
+    // Navbar
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50));
+ 
+    // Mobile nav
+    const ham = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    ham.addEventListener('click', () => { ham.classList.toggle('open'); mobileNav.classList.toggle('open'); });
+    function closeMobileNav() { ham.classList.remove('open'); mobileNav.classList.remove('open'); }
+ 
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+ 
+    // Form
+    function handleSubmit() {
+      const name = document.getElementById('fname').value.trim();
+      const biz  = document.getElementById('fbusiness').value.trim();
+      if (!name || !biz) { alert('Please fill in your name and business type.'); return; }
+      document.getElementById('formWrap').style.display = 'none';
+      const msg = document.getElementById('successMsg');
+      msg.style.display = 'flex';
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
+ 
