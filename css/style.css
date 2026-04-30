@@ -526,7 +526,7 @@ nav.scrolled {
 /* ── METRICS ── */
 .metrics-bar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   background: var(--card-bg);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -598,7 +598,7 @@ nav.scrolled {
 }
 .section-h2 {
   font-family: var(--ff-head);
-  font-size: clamp(2.4rem, 4vw, 4.5rem);
+  font-size: clamp(2.2rem, 3vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.05;
@@ -1015,6 +1015,10 @@ nav.scrolled {
 #process {
   border-top: 1px solid var(--border);
 }
+
+.section-h2 {
+  font-size: clamp(1.4rem, 3vw, 3.5rem);
+}
 .process-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1086,6 +1090,14 @@ nav.scrolled {
   grid-template-columns: 1fr 1fr;
   margin-top: 3.5rem;
 }
+
+.contact-right {
+  img {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
 .contact-left {
   padding: 3.5rem;
   background: linear-gradient(135deg, #1040cc 0%, var(--blue) 100%);
@@ -1368,6 +1380,55 @@ footer {
 .footer-copy {
   font-size: 0.75rem;
   color: rgba(136, 146, 164, 0.5);
+}
+
+/* ── FOOTER SOCIALS (add-on, no conflicts) ── */
+footer {
+  flex-wrap: wrap;
+  row-gap: 1.25rem;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-social-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  text-decoration: none;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s,
+    transform 0.2s;
+}
+
+.footer-social-link svg {
+  width: 15px;
+  height: 15px;
+  color: inherit;
+}
+
+.footer-social-link:hover {
+  border-color: var(--blue);
+  color: var(--blue-lt);
+  background: rgba(26, 107, 250, 0.08);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .footer-socials {
+    order: -1; /* moves socials above the copy on mobile */
+    width: 100%;
+  }
 }
 
 /* ── ANIMATIONS ── */
